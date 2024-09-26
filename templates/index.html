@@ -2,87 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cilsa Turismo</title>
-    <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="/static.css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="/static.css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+  
 <body>
-    <!-- Header -->
-    <section class="section-header">
-      <header class="header pt-7">
-        <div class="container-xl">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="image-container mb-5 px-4">
-                <img src="/assets/img/estrellita.png" alt="estrella de mar sin fondo" class="img-fluid">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="text-container p-4 d-flex flex-column justify-content-center h-100 mb-5">
-                <h1 class="display-3">CILSA TURISMO</h1>
-                <p class="lead text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet minima maxime repellendus, eos perspiciatis assumenda laudantium! Nobis magni labore vero</p>
-                <button type="button" class="btn btn-outline-secondary text-uppercase">consultanos</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-    </section>
   
-    <!-- Cards -->
-    <section class="section-cards">
-      <div class="container mt-3">
-        <div class="row justify-content-center">
-          <div class="col-md-6 d-flex justify-content-center mb-4">
-              <div class="card circular-card" style="width: 230px; height: 230px; background-image: url('/assets/img/portadavalijas.jpg'); background-size: cover; color: black; position: relative;">
-                <div class="overlay">
-                  <h6 class="card-title">Viajes <br> Nacionales</h6>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-6 d-flex justify-content-center mb-4">
-              <div class="card circular-card" style="width: 230px; height: 230x; background-image: url('/assets/img/maletas2.jpg'); background-size: cover; color: black; position: relative;">
-                <div class="overlay">
-                  <h6 class="card-title">Viajes <br> Internacionales</h6>
-                </div>
-              </div>
-            </div>          
-         
-    </section>
-  
-    <!-- Carousel -->
-    <section class="section-carousel">
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <header></header>
+
+  <div class="container w-75">
+    <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="d-flex justify-content-center w-100">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/assets/img/china.jpg" class="d-block mx-auto" style="width: 40%; max-height: 180px;" alt="...">
+            <img src="/static.img/Carousel1.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="/assets/img/globoterraqueo.jpg" class="d-block mx-auto" style="width: 40%; max-height: 180px;" alt="">
+            <img src="/static.img/Carousel2.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="/assets/img/busamarillo.jpg" class="d-block mx-auto" style="width: 40%; max-height: 180px;" alt="...">
+            <img src="/static.img/Carousel3.jpg" class="d-block w-100" alt="...">
           </div>
-        </div>
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
       </div>
-    </section>
-  
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="/templates.fragments/templates.js"></script>
+      <button class="carousel-control-prev opacity-25" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next opacity-25" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="py-5">
+      <div class="row d-flex justify-content-center p-5">
+        <div class="col-sm-6 mb-3 mb-sm-0 p-3">
+          <div class="card rounded-4 shadow">
+            <div class="d-flex justify-content-center p-3">
+              <img src="/static.img/Cataratas.jpg" class="card-img-top w-75 rounded-4"
+                alt="Imagen de las cataratas del Iguazu">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title text-center">Destino nacional</h3>
+              <p class="card-text text-center p-2">Descubre la riqueza cultural y natural de nuestro país con nuestros
+                exclusivos paquetes turísticos. Desde playas paradisíacas hasta majestuosas montañas, ofrecemos
+                experiencias únicas que resaltan la diversidad y belleza de cada rincón.</p>
+              <div class="btn-field">
+                <a href="/templates/destinosNacionales.html">
+                  <button type="button">Ver opciones</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-3 mb-sm-0 p-3">
+          <div class="card rounded-4 shadow">
+            <div class="d-flex justify-content-center p-3">
+              <img src="/static.img/RepublicaDominicana.jpg" class="card-img-top w-75 rounded-4"
+                alt="Imagen de una playa en Republica Dominicana">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title text-center">Destino internacional</h3>
+              <p class="card-text text-center p-2">Embárcate en una aventura global con nuestros itinerarios diseñados
+                para
+                explorar los destinos más fascinantes del mundo. Desde las vibrantes ciudades europeas hasta exóticas
+                islas tropicales, te garantizamos un viaje inolvidable lleno de descubrimientos y emociones.
+              </p>
+              <div class="btn-field">
+                <a href="/templates/destinosInternacionales.html">
+                  <button type="button">Ver opciones</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="/templates.fragments/templates.js"></script>
 </body>
 
 </html>
