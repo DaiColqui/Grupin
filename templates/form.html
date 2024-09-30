@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de contacto</title>
+    <title>Grupin Turismo</title>
+    <link rel="icon" href="/static.img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/static.css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -13,13 +14,10 @@
 </head>
 <body>
     <header></header>
-    <div class="containerForm w-50">
-        <div id="toggleStyle">
-            <i id="sunIcon" class="fa-solid fa-sun"></i>
-            <i id="moonIcon" class="fa-solid fa-moon"></i>
-        </div>
+    <div class="containerForm">
+        
         <div class="form-content">
-            <h1 id="title">Formulario de contacto</h1>
+            <h1 id="title">¡Dejanos tu consulta!</h1>
             <form id="registrationForm">
                 <div class="input-group">
                     <div class="input-field">
@@ -35,19 +33,12 @@
                         <input type="email" placeholder="Email" id="email" required>
                     </div>
                     <div class="input-field">
-                        <i class="fa-solid fa-calendar"></i>
-                        <input type="date" placeholder="Fecha de Nacimiento" id="birthDate" required>
-                    </div>
-                    
-                    <div class="input-field">
-                        <i class="fa-solid fa-globe"></i>
-                        <select id="country" required>
-                            <option value="">País de residencia</option>
-                        </select>
+                        <i class="fa-solid fa-pencil"></i>
+                        <textarea placeholder="Consulta" id="message" required></textarea>
                     </div>
                 </div>
                 <div class="btn-field">
-                    <button id="signUp" type="submit">Enviar datos</button>
+                    <button id="signUp" type="submit">Enviar</button>
                 </div>
             </form>
         </div>
