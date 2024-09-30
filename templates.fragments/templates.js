@@ -12,10 +12,10 @@ header.innerHTML = `
                     </a>
                 </div>
                 <div class="navbar-nav">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                    <a class="nav-link" href="/templates/destinosNacionales.html">Destinos nacionales</a>
-                    <a class="nav-link" href="/templates/destinosInternacionales.html">Destinos internacionales</a>
-                    <a class="nav-link" href="/templates/form.html">Contacto</a>
+                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link" href="destinosNacionales.html">Destinos nacionales</a>
+                    <a class="nav-link" href="destinosInternacionales.html">Destinos internacionales</a>
+                    <a class="nav-link" href="form.html">Contacto</a>
                 </div>
                 <div id="toggleStyle">
                     <i id="sunIcon" class="fa-solid fa-sun"></i>
