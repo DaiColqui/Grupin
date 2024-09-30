@@ -208,3 +208,81 @@ a:hover {
     color: #6c757d; 
     text-decoration: underline; 
 }
+
+/* Estilos destinos internacionales */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* card*/
+.card-wrapper {
+    height: 400px;
+    width: 300px;
+    perspective: 1000px;
+    margin: 20px; /* separación de card */
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card-wrapper:hover .content {
+    transform: rotateY(180deg);
+}
+
+.face-front, .face-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    color: #333; /* Color texto card */
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.face-back {
+    transform: rotateY(180deg);
+}
+
+.card-body {
+    text-align: center;
+}
+
+/* Estilos para la imagen circular */
+.rounded-circle {
+    width: 150px; /* Ancho de la imagen circular y alto:*/
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #f57a06; /* Borde naranja*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los íconos */
+.list-inline-item {
+    margin-right: 10px; /* Espacio entre íconos */
+}
+
+.list-inline-item a {
+    color: #007bff; /* Color azul para los íconos */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    transition: color 0.3s; /* Transición de color al pasar el ratón */
+}
+
+.list-inline-item a:hover {
+    color: #0056b3; /* Cambio de color al pasar el ratón */
+}
+
