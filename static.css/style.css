@@ -1,18 +1,16 @@
 .logo {
     max-height: 60px;
     border-radius: 10px;
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left:3rem;
-    margin-right:3rem;
-    margin-top:1rem;
-    margin-bottom:1rem;    
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
 }
 
@@ -24,26 +22,33 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; 
-    color: #454545; 
+    background-color: #f4f4f4;
+    color: #454545;
     transition: background-color 0.3s, color 0.3s;
-    
+
 }
 
 .containerForm {
-    width: 400px;
+    width: 50%;
     margin: 50px auto;
     padding: 20px;
-    background-color: vi; 
+    background-color: vi;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     position: relative;
     transition: background-color 0.3s;
 }
 
+@media (max-width: 768px) {
+    .containerForm {
+        width: 100%;
+    }
+}
+
 .form-content {
     display: flex;
     flex-direction: column;
+    margin: 10px;
 }
 
 .text {
@@ -53,13 +58,18 @@ body {
 
 #title {
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 5rem;
+    color: #277c8d;
 }
-
-#birthDate {
-    font-family: Arial, sans-serif;
-    font-weight: normal;
+#titleForm {
+    text-align: center;
+    font-size: 3rem;
 }
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 .input-group {
     display: flex;
@@ -76,7 +86,9 @@ body {
 .input-field i {
     position: absolute;
     margin-left: 10px;
-    color: #277c8d; 
+    margin-top: 15px;
+    align-self: start;
+    color: #277c8d;
 }
 
 .input-field input,
@@ -86,8 +98,20 @@ body {
     border: 1px solid #2a2a2a;
     border-radius: 4px;
     font-size: 16px;
-    background-color: #f9f3ff; 
-    color: #454545; 
+    background-color: #f9f3ff;
+    color: #454545;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.input-field textarea {
+    width: 100%;
+    height: 7rem;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f3ff;
+    color: #454545;
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
 
@@ -115,8 +139,8 @@ button {
 }
 
 button:hover {
-    background-color: #ed8275; 
-    color: #ffffff; 
+    background-color: #ed8275;
+    color: #ffffff;
 }
 
 button.disable {
@@ -129,9 +153,9 @@ button.disable:hover {
 
 /* Estilos del ícono  */
 #toggleStyle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: flex;
+    top: 30px;
+    right: 30px;
     font-size: 24px;
     color: #277c8d;
     cursor: pointer;
@@ -139,64 +163,84 @@ button.disable:hover {
 }
 
 #toggleStyle #sunIcon {
-    display: none; 
-    color:#ed8275;
+    display: none;
+    color: #ed8275;
 }
 
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
 
 .alternate-style #toggleStyle #moonIcon {
-    display: none; 
+    display: none;
 }
 
 .alternate-style #toggleStyle #sunIcon {
-    display: block; 
+    display: block;
 }
 
 #toggleStyle:hover {
-    color: #545454; 
+    color: #545454;
 }
 
 /* Estilos alternativos */
 .alternate-style {
-    background-color: #484848; 
+    background-color: #484848;
     color: #ffffff;
 }
 
-.alternate-style .container {
-    background-color: #000000; 
+.alternate-style .containerForm {
+    background-color: #262626;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .alternate-style .input-field i {
-    color: #ed8275; 
+    color: #ed8275;
 }
 
 .alternate-style .input-field input,
 .alternate-style .input-field select {
-    background-color: #262626; 
-    border-color: #4c4b4b; 
+    background-color: #262626;
+    border-color: #4c4b4b;
+    color: #ffffff;
+}
+
+.alternate-style .input-field textarea {
+    background-color: #262626;
+    border-color: #4c4b4b;
     color: #ffffff;
 }
 
 .alternate-style button {
-    background-color: #ed8275; 
-    color:#000000;
+    background-color: #ed8275;
+    color: #000000;
 }
 
 .alternate-style button:hover {
-    background-color: #277c8d; 
-    color: #fff; 
+    background-color: #277c8d;
+    color: #fff;
 }
 
 /* Estilo para los enlaces por defecto */
-a {
-    color: #007bff; 
+.navbar-nav a {
+    transition: transform 0.3s ease;
+    color: #ffffff;
     transition: color 0.3s;
+    text-decoration: none;
+    margin: 1rem;
 }
 
-a:hover {
-    color: #77b9ff; 
-    text-decoration: underline; 
+.navbar-nav a:hover {
+    color: #ed8275;
+    text-decoration: none;
+    transform: scale(1.1);
 }
 
 /* Estilo específico para el enlace en el formulario */
@@ -205,6 +249,94 @@ a:hover {
 }
 
 #registrationForm a:hover {
-    color: #6c757d; 
-    text-decoration: underline; 
+    color: #6c757d;
+    text-decoration: underline;
+    transform: scale(1.5);
+}
+
+/* Estilos destinos internacionales */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* card*/
+.card-wrapper {
+    height: 400px;
+    width: 300px;
+    perspective: 1000px;
+    margin: 20px;
+    /* separación de card */
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card-wrapper:hover .content {
+    transform: rotateY(180deg);
+}
+
+.face-front,
+.face-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    /* Color texto card */
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.face-back {
+    transform: rotateY(180deg);
+}
+
+.card-body {
+    text-align: center;
+}
+
+/* Estilos para la imagen circular */
+.rounded-circle {
+    width: 150px;
+    /* Ancho de la imagen circular y alto:*/
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #f57a06;
+    /* Borde naranja*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los íconos */
+.list-inline-item {
+    margin-right: 10px;
+    /* Espacio entre íconos */
+}
+
+.list-inline-item a {
+    color: #007bff;
+    /* Color azul para los íconos */
+    text-decoration: none;
+    /* Quitar subrayado del enlace */
+    transition: color 0.3s;
+    /* Transición de color al pasar el ratón */
+}
+
+.list-inline-item a:hover {
+    color: #0056b3;
+    /* Cambio de color al pasar el ratón */
 }

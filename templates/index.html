@@ -4,17 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio</title>
+  <title>Grupin Turismo</title>
+  <link rel="icon" href="/static.img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="/static.css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_blue.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Qwitcher+Grypen:wght@400;700&family=Satisfy&display=swap"
+    rel="stylesheet">
 </head>
-  
+
 <body>
-  
+
   <header></header>
 
-  <div class="container w-75">
+  <div class="container w-100 py-5">
     <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -48,17 +60,18 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="py-5">
-      <div class="row d-flex justify-content-center p-5">
-        <div class="col-sm-6 mb-3 mb-sm-0 p-3">
+
+    <div class="pt-lg-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-sm-6 mb-3 mb-sm-0">
           <div class="card rounded-4 shadow">
             <div class="d-flex justify-content-center p-3">
               <img src="/static.img/Cataratas.jpg" class="card-img-top w-75 rounded-4"
                 alt="Imagen de las cataratas del Iguazu">
             </div>
             <div class="card-body">
-              <h3 class="card-title text-center">Destino nacional</h3>
-              <p class="card-text text-center p-2">Descubre la riqueza cultural y natural de nuestro país con nuestros
+              <h3 id="titleForm" class="satisfy-regular">Destinos nacionales</h3>
+              <p class="card-text text-center px-4 py-2">Descubre la riqueza cultural y natural de nuestro país con nuestros
                 exclusivos paquetes turísticos. Desde playas paradisíacas hasta majestuosas montañas, ofrecemos
                 experiencias únicas que resaltan la diversidad y belleza de cada rincón.</p>
               <div class="btn-field">
@@ -69,15 +82,15 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 mb-3 mb-sm-0 p-3">
+        <div class="col-sm-6 mb-3 mb-sm-0">
           <div class="card rounded-4 shadow">
             <div class="d-flex justify-content-center p-3">
               <img src="/static.img/RepublicaDominicana.jpg" class="card-img-top w-75 rounded-4"
                 alt="Imagen de una playa en Republica Dominicana">
             </div>
             <div class="card-body">
-              <h3 class="card-title text-center">Destino internacional</h3>
-              <p class="card-text text-center p-2">Embárcate en una aventura global con nuestros itinerarios diseñados
+              <h3 id="titleForm" class="satisfy-regular">Destinos internacionales</h3>
+              <p class="card-text text-center px-4 py-2">Embárcate en una aventura global con nuestros itinerarios diseñados
                 para
                 explorar los destinos más fascinantes del mundo. Desde las vibrantes ciudades europeas hasta exóticas
                 islas tropicales, te garantizamos un viaje inolvidable lleno de descubrimientos y emociones.
@@ -96,9 +109,12 @@
 
   <footer></footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="/services/form.js"></script>
   <script src="/templates.fragments/templates.js"></script>
 </body>
 

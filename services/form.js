@@ -6,16 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
-    // Agregar países al select
-    const countrySelect = document.getElementById('country');
-    const countries = ["Argentina", "Brasil", "Bolivia", "Chile", "Colombia", "Ecuador", "México", "Paraguay", "Perú", "Uruguay", "Venezuela"];
-
-    countries.forEach(country => {
-        const option = document.createElement('option');
-        option.value = country;
-        option.textContent = country;
-        countrySelect.appendChild(option);
-    });
 
     // Validar el formulario
     const form = document.getElementById('registrationForm');
@@ -25,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const email = document.getElementById('email').value;
         const name = document.getElementById('name').value;
         const lastName = document.getElementById('lastName').value;
-        const birthDateElement = document.getElementById('birthDate').value;
+        const message = document.getElementById('message').value;
 
         if (!validateEmail(email)) {
             alert('El correo electrónico no es válido. Ingrese un correo válido, por ejemplo: "email@ejemplo.com".');
@@ -33,30 +23,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (!validateInput(name)) {
-            alert('Nombre no válido. Ingrese un nombre válido, por ejemplo: "Daiana".');
+            alert('Nombre no válido. Ingrese un nombre válido, por ejemplo: "Lionel".');
             return;
         }
 
         if (!validateInput(lastName)) {
-            alert('Apellido no válido. Ingrese un apellido válido, por ejemplo: "Colquicocha".');
+            alert('Apellido no válido. Ingrese un apellido válido, por ejemplo: "Messi".');
             return;
         }
 
-        if (birthDateElement.trim() === '') {
-            alert('La fecha de nacimiento no puede estar vacía. Por favor ingrese una fecha válida.');
+        if (!validateInput(message)) {
+            alert('Por favor, para enviar un mensaje o consulta rellene correctamente el campo con texto.');
             return;
         }
-
-        if (validateBirthDate(birthDateElement) == 1) {
-            alert('No podemos registrarte. Para poder registrarte tenes que ser mayor de 18 años.');
-            return;
-        } else if (validateBirthDate(birthDateElement) == 2) {
-            alert('Según esta fecha todavía no has nacido. Por favor ingresa una fecha válida');
-            return;
-        }
-
-
-        alert('¡Registro exitoso!');
+        
+        alert('¡Mensaje enviado!');
     });
 
     function validateEmail(email) {
@@ -68,24 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!name.trim()) {
             return false;
         }
-        const regex = /^[A-Za-záéíóúÁÉÍÓÚñÑ' ]+$/;
+        const regex = /^[A-Za-záéíóúÁÉÍÓÚñÑ'.,:!"¿?]+( [A-Za-záéíóúÁÉÍÓÚñÑ'.,:!"¿?]+)*$/;
         return regex.test(name);
-    }
-
-    function validateBirthDate(birthDate) {
-        const today = new Date();
-        const ageLimit = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-        ageLimit.setFullYear(ageLimit.getFullYear() - 18);
-
-        const bD = new Date(birthDate);
-
-        if (bD <= ageLimit) {
-            return 0;
-        } else if (bD > today) {
-            return 2;
-        } else {
-            return 1;
-        }
     }
 
     // Alternar el estilo de la página
