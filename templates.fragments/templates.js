@@ -7,12 +7,12 @@ header.innerHTML = `
         <div class="d-flex align-items-center py-3">
             <nav class="navbar navbar-expand-lg navbar-dark w-100 justify-content-between ">
                 <div>
-                    <a href="index.html">
+                    <a href="../index.html">
                         <img class="logo" src="/static.img/logo.jpg" alt="logo">
                     </a>
                 </div>
                 <div class="navbar-nav">
-                    <a class="nav-link" href="/templates/index.html">Inicio</a>
+                    <a class="nav-link" href="../index.html">Inicio</a>
                     <a class="nav-link" href="/templates/destinosNacionales.html">Destinos nacionales</a>
                     <a class="nav-link" href="/templates/destinosInternacionales.html">Destinos internacionales</a>
                     <a class="nav-link" href="/templates/form.html">Contacto</a>
